@@ -199,7 +199,7 @@ The server is also a great place to ask questions, suggest features or report bu
 
 ### Donations
 
-If you love deej and want to show your support for this project, you can do so using the link below. Please don't feel obligated to donate - building the project and telling your friends about it goes a very long way! Thank you very much.
+This proyect have been made thank to omriharel and it's original proyect. If you love deej and want to show your support for this project, you can do so using the link below.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/omriharel)
 
