@@ -1,4 +1,4 @@
-# deej
+# deej bluetooth
 
 deej is an **open-source hardware volume mixer** for Windows and Linux PCs. It lets you use real-life sliders (like a DJ!) to **seamlessly control the volumes of different apps** (such as your music player, the game you're playing and your voice chat session) without having to stop what you're doing.
 
@@ -52,8 +52,6 @@ deej is written in Go and [distributed](https://github.com/omriharel/deej/releas
 - Lightweight desktop client, consuming around 10MB of memory
 - Runs from your system tray
 - Helpful notifications to let you know if something isn't working
-
-> **Looking for the older Python version?** It's no longer maintained, but you can always find it in the [`legacy-python` branch](https://github.com/omriharel/deej/tree/legacy-python).
 
 ## How it works
 
