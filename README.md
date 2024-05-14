@@ -52,13 +52,15 @@ deej is written in Go and [distributed](https://github.com/omriharel/deej/releas
 - Lightweight desktop client, consuming around 10MB of memory
 - Runs from your system tray
 - Helpful notifications to let you know if something isn't working
+- Wireless connection
+- See your volume levels on the display
 
 ## How it works
 
 ### Hardware
 
 - The sliders are connected to 5 (or as many as you like) analog pins on an Arduino Nano/Uno board. They're powered from the board's 5V output (see schematic)
-- The board connects via a USB cable to the PC
+- The board connects via a USB cable or bluetooth to the PC
 
 #### Schematic
 
