@@ -173,16 +173,6 @@ deej is a relatively new project, but a vibrant and awesome community is rapidly
 
 The server is also a great place to ask questions, suggest features or report bugs (but of course, feel free to use GitHub if you prefer).
 
-### Donations
-
-This proyect have been made thank to omriharel and it's original proyect. If you love deej and want to show your support for this project, you can do so using the link below.
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/omriharel)
-
-### Contributing
-
-Please see [`docs/CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
-
 ## License
 
 deej is released under the [MIT license](./LICENSE).
