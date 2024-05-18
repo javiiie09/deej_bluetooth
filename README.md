@@ -1,8 +1,6 @@
 # deej bluetooth
 
-deej is an **open-source hardware volume mixer** for Windows and Linux PCs. It lets you use real-life sliders (like a DJ!) to **seamlessly control the volumes of different apps** (such as your music player, the game you're playing and your voice chat session) without having to stop what you're doing.
-
-deej consists of a [lightweight desktop client](#features) written in Go, and an Arduino-based hardware setup that's simple and cheap to build. [**Check out some versions built by members of our community!**](./community.md)
+deej is an **open-source hardware volume mixer** for Windows and Linux PCs. In this build i have taken the original deej idea and make it work wirellessly. [original](https://github.com/omriharel/deej)
 
 ![deej](assets/build-3d-annotated.png)
 
@@ -118,15 +116,16 @@ Build deej for yourself, or as an awesome gift for your gaming buddies!
   - **Important:** make sure to get **linear** sliders, not logarithmic ones! Check the product description
   - You can also use circular knobs if you like
 - Some wires
-- Any kind of box to hold everything together. **You don't need a 3D printer for this project!** It works fantastically with just a piece of cardboard or a shoebox. That being said, if you do have one, read on...
-
-### Thingiverse collection
-
-With many different 3D-printed designs being added to our [community showcase](./community.md), it felt right to gather all of them in a Thingiverse collection for you to browse. If you have access to a 3D printer, feel free to use one of the designs in your build.
-
-**[Visit our community-created design collection on Thingiverse!](https://thingiverse.com/omriharel/collections/deej)**
-
-> You can also [submit your own](https://discord.gg/nf88NJu) design to be added to the collection. Regardless, if you do upload your design to Thingiverse, _please add a `deej` tag to it so that others can find it more easily_.
+- A bluetooth module
+  - I recommend the HC-05 or HC-06 for better compatibility (Bluetooth 2.1) or if you know that your computer supports newers versions of bluetooth the HM-10 or AT-09 (BLE 4.0)
+- Batteries (LI-ION)
+  - It can be one, two or more. Use it in parallel instead of serie, the arduino only need 5V.
+- Boost-up module
+- Battery charge module
+  - It's useful if you want to charge your batteries, use it while charging or you can remove the batteries and power it.
+- Micro USB or USB-C port.
+- BSM
+  - It's a protection module for the batteries
 
 
 ### Build procedure
@@ -155,7 +154,6 @@ With many different 3D-printed designs being added to our [community showcase](.
 
 - Head over to the [releases page](https://github.com/omriharel/deej/releases) and download the [latest version](https://github.com/omriharel/deej/releases/latest)'s executable and configuration file (`deej.exe` and `config.yaml`)
 - Place them in the same directory anywhere on your machine
-- (Optional, on Windows) Create a shortcut to `deej.exe` and copy it to `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` to have deej run on boot
 
 ### Building from source
 
