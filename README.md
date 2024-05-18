@@ -1,9 +1,30 @@
+<<<<<<< Updated upstream
 # deej bluetooth
 
 deej is an **open-source hardware volume mixer** for Windows and Linux PCs. In this build i have taken the original deej idea and make it work wirellessly. [original](https://github.com/omriharel/deej)
 
 ![deej](assets/build-3d-annotated.png)
 
+=======
+# deej
+
+deej is an **open-source hardware volume mixer** for Windows and Linux PCs. It lets you use real-life sliders (like a DJ!) to **seamlessly control the volumes of different apps** (such as your music player, the game you're playing and your voice chat session) without having to stop what you're doing.
+
+**Join the [deej Discord server](https://discord.gg/nf88NJu) if you need help or have any questions!**
+
+[![Discord](https://img.shields.io/discord/702940502038937667?logo=discord)](https://discord.gg/nf88NJu)
+
+> **_New:_** [work-in-progress deej FAQ](./docs/faq/faq.md)!
+
+deej consists of a [lightweight desktop client](#features) written in Go, and an Arduino-based hardware setup that's simple and cheap to build. [**Check out some versions built by members of our community!**](./community.md)
+
+**[Download the latest release](https://github.com/omriharel/deej/releases/latest) | [Video demonstration](https://youtu.be/VoByJ4USMr8) | [Build video by Tech Always](https://youtu.be/x2yXbFiiAeI)**
+
+![deej](assets/build-3d-annotated.png)
+
+> _**Psst!** [No 3D printer? No problem!](./assets/build-shoebox.jpg)_ You can build deej on some cardboard, a shoebox or even a breadboard :)
+
+>>>>>>> Stashed changes
 ## Table of contents
 
 - [Features](#features)
@@ -13,6 +34,11 @@ deej is an **open-source hardware volume mixer** for Windows and Linux PCs. In t
   - [Software](#software)
 - [Slider mapping (configuration)](#slider-mapping-configuration)
 - [Build your own!](#build-your-own)
+<<<<<<< Updated upstream
+=======
+  - [FAQ](#faq)
+  - [Build video](#build-video)
+>>>>>>> Stashed changes
   - [Bill of Materials](#bill-of-materials)
   - [Thingiverse collection](#thingiverse-collection)
   - [Build procedure](#build-procedure)
@@ -38,15 +64,24 @@ deej is written in Go and [distributed](https://github.com/omriharel/deej/releas
 - Lightweight desktop client, consuming around 10MB of memory
 - Runs from your system tray
 - Helpful notifications to let you know if something isn't working
+<<<<<<< Updated upstream
 - Wireless connection
 - See your volume levels on the display
+=======
+
+> **Looking for the older Python version?** It's no longer maintained, but you can always find it in the [`legacy-python` branch](https://github.com/omriharel/deej/tree/legacy-python).
+>>>>>>> Stashed changes
 
 ## How it works
 
 ### Hardware
 
 - The sliders are connected to 5 (or as many as you like) analog pins on an Arduino Nano/Uno board. They're powered from the board's 5V output (see schematic)
+<<<<<<< Updated upstream
 - The board connects via a USB cable or bluetooth to the PC
+=======
+- The board connects via a USB cable to the PC
+>>>>>>> Stashed changes
 
 #### Schematic
 
@@ -107,6 +142,21 @@ Building deej is very simple. You only need a few relatively cheap parts - it's 
 
 Build deej for yourself, or as an awesome gift for your gaming buddies!
 
+<<<<<<< Updated upstream
+=======
+### FAQ
+
+I've started a highly focused effort of writing a proper FAQ page for deej, covering many basic and advanced topics.
+
+It is still _very much a work-in-progress_, but I'm happy to [share it in its current state](./docs/faq/faq.md) in hopes that it at least covers some questions you might have.
+
+FAQ feedback in our [community Discord](https://discord.gg/nf88NJu) is strongly encouraged :)
+
+### Build video
+
+In case you prefer watching to reading, Charles from the [**Tech Always**](https://www.youtube.com/c/TechAlways) YouTube channel has made [**a fantastic video**](https://youtu.be/x2yXbFiiAeI) that covers the basics of building deej for yourself, including parts, costs, assembly and software. I highly recommend checking it out!
+
+>>>>>>> Stashed changes
 ### Bill of Materials
 
 - An Arduino Nano, Pro Micro or Uno board
@@ -116,6 +166,7 @@ Build deej for yourself, or as an awesome gift for your gaming buddies!
   - **Important:** make sure to get **linear** sliders, not logarithmic ones! Check the product description
   - You can also use circular knobs if you like
 - Some wires
+<<<<<<< Updated upstream
 - A bluetooth module
   - I recommend the HC-05 or HC-06 for better compatibility (Bluetooth 2.1) or if you know that your computer supports newers versions of bluetooth the HM-10 or AT-09 (BLE 4.0)
 - Batteries (LI-ION)
@@ -126,6 +177,17 @@ Build deej for yourself, or as an awesome gift for your gaming buddies!
 - Micro USB or USB-C port.
 - BSM
   - It's a protection module for the batteries
+=======
+- Any kind of box to hold everything together. **You don't need a 3D printer for this project!** It works fantastically with just a piece of cardboard or a shoebox. That being said, if you do have one, read on...
+
+### Thingiverse collection
+
+With many different 3D-printed designs being added to our [community showcase](./community.md), it felt right to gather all of them in a Thingiverse collection for you to browse. If you have access to a 3D printer, feel free to use one of the designs in your build.
+
+**[Visit our community-created design collection on Thingiverse!](https://thingiverse.com/omriharel/collections/deej)**
+
+> You can also [submit your own](https://discord.gg/nf88NJu) design to be added to the collection. Regardless, if you do upload your design to Thingiverse, _please add a `deej` tag to it so that others can find it more easily_.
+>>>>>>> Stashed changes
 
 
 ### Build procedure
@@ -154,6 +216,10 @@ Build deej for yourself, or as an awesome gift for your gaming buddies!
 
 - Head over to the [releases page](https://github.com/omriharel/deej/releases) and download the [latest version](https://github.com/omriharel/deej/releases/latest)'s executable and configuration file (`deej.exe` and `config.yaml`)
 - Place them in the same directory anywhere on your machine
+<<<<<<< Updated upstream
+=======
+- (Optional, on Windows) Create a shortcut to `deej.exe` and copy it to `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` to have deej run on boot
+>>>>>>> Stashed changes
 
 ### Building from source
 
@@ -171,6 +237,19 @@ deej is a relatively new project, but a vibrant and awesome community is rapidly
 
 The server is also a great place to ask questions, suggest features or report bugs (but of course, feel free to use GitHub if you prefer).
 
+<<<<<<< Updated upstream
+=======
+### Donations
+
+If you love deej and want to show your support for this project, you can do so using the link below. Please don't feel obligated to donate - building the project and telling your friends about it goes a very long way! Thank you very much.
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/omriharel)
+
+### Contributing
+
+Please see [`docs/CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
+
+>>>>>>> Stashed changes
 ## License
 
 deej is released under the [MIT license](./LICENSE).
